@@ -49,3 +49,10 @@ TEST LOCALLY
 5. Logout
 
 API Documentation-https://documenter.getpostman.com/view/48051536/2sB3Hht2zo
+
+Challengers faced:
+1. API organization: /slots and /book endpoints were separated using Mongoose models to overcome route design issues.
+2. The integration of simple routes with password hashing and JWT fixed authentication issues with the Login/Register API.
+3. CORS issues: By changing the CORS settings and adding FRONTEND_ORIGIN to the.env file, the frontend was able to communicate with the backend.
+4. Duplicate problems were encountered during the seeding database; these were fixed by using deleteMany() to empty the database and putting in place a compound index.
+5. Changes to the frontend state  Re-fetching slots and updating state using setSlots fixed the issue where booking failed to update the user interface.
