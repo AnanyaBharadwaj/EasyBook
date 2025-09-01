@@ -1,0 +1,38 @@
+# --- Dependencies (ignore for both frontend & backend) ---
+node_modules/
+
+# --- Build outputs ---
+dist/
+build/
+.cache/
+.next/
+out/
+
+# --- Environment variables ---
+.env
+.env.*
+!.env.example
+.env.local
+
+# --- Logs ---
+logs/
+*.log
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- Test coverage ---
+coverage/
+
+# --- TypeScript build cache ---
+*.tsbuildinfo
+
+# --- Optional: lock files (keep if you want reproducible builds) ---
+package-lock.json
+# yarn.lock
